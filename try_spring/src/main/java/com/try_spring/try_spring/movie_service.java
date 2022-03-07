@@ -9,5 +9,5 @@ public interface movie_service {
     Movie delete_movie(Long id);
     Movie update_movie(Movie movie);
     void addTo_watchlist(Long id);
-    // List<Movie> view_watchlist(Boolean watchlist);
+    List<Movie> view_watchlist(Boolean watchlist);
 }

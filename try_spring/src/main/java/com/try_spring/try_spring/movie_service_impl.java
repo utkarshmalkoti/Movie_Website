@@ -59,10 +59,10 @@ public class movie_service_impl implements movie_service {
         }
     }
 
-    // @Override
-    // public List<Movie> view_watchlist(Boolean watchlist){
-    //     return mRepository.get_watchlist_repo(watchlist);
-    // }
+    @Override
+    public List<Movie> view_watchlist(Boolean watchlist){
+        return mRepository.get_watchlist_repo(watchlist);
+    }
 
 }
 

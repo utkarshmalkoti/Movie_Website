@@ -38,10 +38,10 @@ public class tryspring_controller {
     public Movie movie(@PathVariable("id") Long id){
         return mService.movie_details(id);
     }
-    // @GetMapping(MOVIES+"/view_watchlist")
-    // public List<Movie> get_watchlist(){
-    //     return mService.view_watchlist(true);
-    // }
+    @GetMapping(MOVIES+"/view_watchlist")
+    public List<Movie> get_watchlist(){
+        return mService.view_watchlist(true);
+    }
 
     @PostMapping(MOVIES)
     public Movie save_movie(@RequestBody Movie movie){
