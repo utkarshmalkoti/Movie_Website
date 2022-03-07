@@ -30,11 +30,11 @@ public class Movie {
     @Column(name="name")
     private String Name = new String();
     @Column(name="imdb_score")
-    private Double imdb_score;
+    private Double Imdb_score;
     @Column(name="is_watched")
-    private Boolean watched;
+    private Boolean Watched;
     @Column(name="watchlist")
-    private Boolean watchlist;
+    private Boolean Watchlist;
     public long getId() {
         return Id;
     }

@@ -30,9 +30,8 @@ public class tryspring_controller {
     //     return "Application Name: " + appname + "\n" + " Application Version: " + appversion;
     // }
     @GetMapping(MOVIES)
-    public String movie(){
-        mService.get_movies();
-        return "HERE ARE THE MOVIES";
+    public List<Movie> movie(){
+        return mService.get_movies();
     }
     @GetMapping(MOVIES+"/{id}")
     public Movie movie(@PathVariable("id") Long id){
