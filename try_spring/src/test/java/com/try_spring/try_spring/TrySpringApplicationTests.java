@@ -13,9 +13,18 @@
 // // 	@Test
 // // 	void contextLoads() {	
 // // 	}
+//     // @Autowired
+//     // public Movie_Repo mRepository;
+
 // 	@Test
-// 	void testMovie(){
-// 		String actual_result =  controller.movie();
-// 		assertEquals("HERE ARE THE MOVIES", actual_result);
+// 	void testUpdateMovie(){
+//         Movie movie = new Movie();
+//         movie.setImdb_score((double) 5);
+//         movie.setName("newmovie");
+//         movie.setWatched(true);
+//         movie.setWatchlist(true);
+//         Movie actual_result =  controller.save_movie(movie);
+//         System.out.println(actual_result);
+// 		assertEquals(movie, actual_result);
 // 	}
 // }
